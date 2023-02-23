@@ -46,12 +46,12 @@ section {
 }
 .grid-main {
   grid-template-areas:
-    "featured featured featured featured featured featured"
+    "trending trending trending trending trending trending"
     "new       new        new     new       new       new"
     "popular  popular  popular  popular  popular   popular";
 }
-.featured {
-  grid-area: featured;
+.trending {
+  grid-area: trending;
   background-color: red;
 }
 .new {
@@ -73,8 +73,8 @@ section {
   }
   .grid-main {
     grid-template-areas:
-      "featured featured featured new     new     new"
-      "featured featured featured new     new     new"
+      "trending trending trending new     new     new"
+      "trending trending trending new     new     new"
       "popular  popular  popular  popular popular popular";
   }
 }
@@ -92,8 +92,8 @@ section {
   }
   .grid-main {
     grid-template-areas:
-      "featured featured featured featured new     new"
-      "featured featured featured featured new     new"
+      "trending trending trending trending new     new"
+      "trending trending trending trending new     new"
       "popular  popular  popular  popular  popular popular";
   }
 }
