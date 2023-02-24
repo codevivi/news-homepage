@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/layout.css">
   <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
 
   <title>Frontend Mentor | News homepage</title>
 
@@ -25,13 +26,35 @@
 </head>
 
 <body>
-  <header class=" header container">
-    Home
-    New
-    Popular
-    Trending
-    Categories
+  <header class="header container">
+    <a class="logo-link" href="#" class="logo" aria-label="Link to homepage">
+      <img class="logo" width="48" src="./assets/images/logo.svg" alt="logo W letter">
+    </a>
+    <nav class="main-nav mob-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggler" aria-label="expand-navigation" type="button">
+      <img src="./assets/images/icon-menu.svg" aria-hidden="true" width="40" alt="menu icon">
+    </button>
   </header>
+
   <main class="container grid grid-main">
 
     <section class="trending">
