@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./assets/css/layout.css">
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/trending.css">
 
   <title>Frontend Mentor | News homepage</title>
 
@@ -57,15 +58,29 @@
 
   <main class="container grid grid-main">
 
-    <section class="trending">
-      The Bright Future of Web 3.0?
+    <section class="trending grid grid-trending">
 
-      We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-      But is it really fulfilling its promise?
+      <div class="img-box">
+        <picture>
+          <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 1200px)" />
+          <source srcset="./assets/images/image-web-3-mobile.jpg" media="(min-width: 1px)" />
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="colorful wooden puzzle" width="732" />
+        </picture>
+      </div>
 
-      Read more
+      <h1 class="title-1">
+        The Bright Future of Web 3.0?
+      </h1>
+      <div class="text">
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+          But is it really fulfilling its promise?
+        </p>
+        <button class="btn btn-accent">Read more</button>
+      </div>
+
     </section>
-    <section class="new">
+    <!-- <section class="new">
       New
 
       Hydrogen VS Electric Cars
@@ -90,7 +105,7 @@
       03
       The Growth of Gaming
       How the pandemic has sparked fresh opportunities.
-    </section>
+    </section> -->
   </main>
 
   <!-- <div class="attribution">

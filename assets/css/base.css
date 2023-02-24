@@ -42,7 +42,7 @@ body {
 
 p {
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.66;
 }
 
 a {
@@ -62,5 +62,5 @@ a {
 .btn-accent {
   background-color: #f15e50;
   color: #fffdfa;
-  padding: 1.3em 2.5em;
+  padding: 1.2em 2.5em;
 }
