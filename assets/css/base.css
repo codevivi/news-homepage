@@ -16,8 +16,8 @@
 }
 
 :root {
-  --dark-accent: #e9ab53;
-  --light-accent: #f15e50;
+  --light-accent: #e9ab53;
+  --dark-accent: #f15e50;
   --light: #fffdfa;
   --light-shade: #c5c6ce;
   --dark-shade: #5d5f79;
@@ -36,7 +36,7 @@ body {
   background-color: #00001a;
 }
 .text-inverted {
-  background-color: var(--dark-shade);
+  color: var(--light-shade);
   color: #c5c6ce;
 }
 
