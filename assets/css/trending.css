@@ -1,67 +1,36 @@
-.grid-trending {
-  gap: 22px;
-  grid-template-areas:
-    "img img img img img img"
-    "h1  h1   h1  h1  h1 h1"
-    "txt  txt  txt  txt txt txt";
-}
-.trending .img-box {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  grid-area: img;
-}
-.trending picture {
-  width: 100%;
-  display: block;
-  height: auto;
-}
 .trending img {
   display: block;
   width: 100%;
   height: auto;
 }
 .trending .title-1 {
-  grid-area: h1;
   display: block;
   font-size: 2.56rem;
   line-height: 1;
   color: var(--dark);
   color: #00001a;
-}
-.trending .text {
-  grid-area: txt;
-  position: relative;
-  top: -0.4rem;
+  margin-bottom: 0.9rem;
 }
 .trending p {
   margin-bottom: 1.7rem;
 }
 
 @media screen and (min-width: 786px) {
-  .grid-trending {
-    grid-template-rows: repeat(3, auto);
-    gap: 22px 0;
-  }
 }
 @media screen and (min-width: 1200px) {
+  .trending .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   .trending .title-1 {
-    font-size: 58px;
-    line-height: 0.96;
-    margin-top: 0.4rem;
-  }
-  .grid-trending {
-    gap: 28px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-      "img img img img img img"
-      "img img img img img img"
-      "h1  h1  h1 txt  txt txt";
-  }
-  .trending .text {
-    top: 0;
+    font-size: 57.5px;
+    line-height: 1;
+    margin-bottom: 0;
+    line-height: 1em;
   }
   .trending p {
-    margin-bottom: 2.1rem;
+    line-height: 1.5em;
   }
 }

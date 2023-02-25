@@ -1,41 +1,52 @@
 .new {
-  padding: 0 1.35rem;
+  padding: 1.35rem;
+  padding-bottom: 0;
 }
 .new h2 {
   height: auto;
-  margin-top: 1.2rem;
   color: #e9ab53;
   color: var(--light-accent);
   font-size: 2rem;
 }
 .new h3 {
-  font-size: 1.25rem;
-  margin-top: 2rem;
+  margin-top: 1.98rem;
   margin-bottom: 0.5rem;
   color: #fffdfa;
   color: var(--light);
+  font-size: 1.25rem;
+  letter-spacing: 0.01rem;
 }
 .new hr {
   margin-bottom: 2rem;
 }
 .new p {
-  margin-bottom: 1.9rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid var(--dark-shade);
+  border-color: #5d5f79;
 }
 .new p:last-child {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0;
+  border: none;
 }
 
 @media screen and (min-width: 786px) {
   .new {
-    padding: 0 1.6rem;
+    padding: 1.8rem 1.6rem;
+    padding-bottom: 0.6rem;
   }
-
   .new h2 {
-    margin-top: 1.8rem;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
   .new h3 {
-    margin-top: 1.6rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.7rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0;
+  }
+  .new p {
+    line-height: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 2.2rem;
   }
 }

@@ -1,23 +1,6 @@
-/* why does it need margin top... this should be done with grid gaps */
-.popular-grid {
-  margin-top: 0.6rem;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 36px;
-  grid-template-areas:
-    "item1 item1 item1 item1 item1 item1"
-    "item2 item2 item2 item2 item2 item2"
-    "item3 item3 item3 item3 item3 item3";
+.popular {
+  margin-bottom: 80px;
 }
-.grid-item-1 {
-  grid-area: item1;
-}
-.grid-item-2 {
-  grid-area: item2;
-}
-.grid-item-3 {
-  grid-area: item3;
-}
-
 .popular-list div {
   display: flex;
   flex-direction: column;
@@ -36,23 +19,23 @@
 
 .popular .number {
   display: block;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.7rem;
   font-size: 1.9rem;
   font-weight: bold;
 }
 .popular h2 {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.3rem;
   color: var(--dark);
   color: #00001a;
-  font-size: 1rem;
+  font-size: 1.01rem;
   font-weight: bold;
   letter-spacing: 0.08rem;
 }
+.popular p {
+  line-height: 1.6rem;
+}
 @media screen and (min-width: 1200px) {
-  .popular-grid {
-    margin-top: 0.2rem;
-    grid-template-rows: 1fr;
-    gap: 28px;
-    grid-template-areas: "item1 item1 item2 item2 item3 item3";
+  .popular {
+    margin-bottom: 130px;
   }
 }

@@ -74,7 +74,7 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    min-height: 183px;
+    min-height: 185px;
     padding-top: 2.2rem;
   }
   .logo-link .logo {
