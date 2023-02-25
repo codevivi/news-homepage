@@ -30,6 +30,7 @@ body {
   background-color: var(--light);
   background-color: #fffdfa;
   font-family: Inter, sans-serif;
+  position: relative;
 }
 .bg-inverted {
   background-color: var(--dark);
@@ -38,6 +39,17 @@ body {
 .text-inverted {
   color: var(--light-shade);
   color: #c5c6ce;
+}
+.page-footer {
+  height: auto;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  font-size: 0.9em;
+}
+.page-footer a {
+  color: var(--dark);
+  color: #00001a;
 }
 
 p {
