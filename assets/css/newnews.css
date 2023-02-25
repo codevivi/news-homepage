@@ -30,7 +30,11 @@
   padding-bottom: 0;
   border: none;
 }
-
+.new a:hover,
+.new a:focus {
+  color: var(--light);
+  color: #e9ab53;
+}
 @media screen and (min-width: 786px) {
   .new {
     padding: 1.8rem 1.6rem;
