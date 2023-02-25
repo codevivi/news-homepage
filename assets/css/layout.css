@@ -11,7 +11,7 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   min-height: 1872px;
-  background: none !important;
+  /* background: none !important; */
 }
 
 @media screen and (min-width: 1200px) {
@@ -28,7 +28,7 @@ body {
   height: 100%;
   max-width: 344px;
   margin: auto;
-  /* opacity: 0.5; */
+  opacity: 0.5;
 }
 
 .grid {
