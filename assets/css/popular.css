@@ -1,12 +1,21 @@
-.popular-list {
+/* why does it need margin top... this should be done with grid gaps */
+.popular-grid {
   margin-top: 0.6rem;
-  /* why does it need mamrgin top... this sould be done with grid gaps */
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  gap: 35px;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 36px;
+  grid-template-areas:
+    "item1 item1 item1 item1 item1 item1"
+    "item2 item2 item2 item2 item2 item2"
+    "item3 item3 item3 item3 item3 item3";
+}
+.grid-item-1 {
+  grid-area: item1;
+}
+.grid-item-2 {
+  grid-area: item2;
+}
+.grid-item-3 {
+  grid-area: item3;
 }
 
 .popular-list div {
@@ -20,8 +29,11 @@
   align-items: space-between;
 }
 .popular img {
-  margin-right: 28px;
+  display: block;
+  width: 100px;
+  margin-right: 24px;
 }
+
 .popular .number {
   display: block;
   margin-bottom: 0.65rem;
@@ -34,7 +46,13 @@
   color: #00001a;
   font-size: 1rem;
   font-weight: bold;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.08rem;
 }
-.popular p {
+@media screen and (min-width: 1200px) {
+  .popular-grid {
+    margin-top: 0.2rem;
+    grid-template-rows: 1fr;
+    gap: 28px;
+    grid-template-areas: "item1 item1 item2 item2 item3 item3";
+  }
 }
