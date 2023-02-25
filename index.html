@@ -33,7 +33,7 @@
     <a class="logo-link" href="#" class="logo" aria-label="Link to homepage">
       <img class="logo" width="48" src="./assets/images/logo.svg" alt="logo W letter">
     </a>
-    <nav class="main-nav mob-nav">
+    <nav id="main-nav" class="main-nav mob-nav">
       <ul class="nav-list">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
@@ -53,7 +53,7 @@
       </ul>
     </nav>
 
-    <button class="nav-toggler" aria-label="expand-navigation" type="button">
+    <button id="nav-toggler" class="nav-toggler" aria-label="expand-navigation" type="button">
       <img src="./assets/images/icon-menu.svg" aria-hidden="true" width="40" alt="menu icon">
     </button>
   </header>
@@ -160,6 +160,22 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script>
+    const navToggler = document.getElementById("nav-toggler");
+    const togglerIcon = document.querySelector("#nav-toggler img");
+    const mainNav = document.getElementById('main-nav');
+    const menuSrc = "./assets/images/icon-menu.svg";
+    const closeSrc = "./assets/images/icon-menu-close.svg";
+
+    console.log('bla');
+    navToggler.addEventListener('click', toggleNav);
+    function toggleNav() {
+      console.log(navToggler, mainNav);
+      mainNav.classList.toggle('mob-nav');
+      togglerIcon.src = mainNav.classList.contains('mob-nav') ? menuSrc : closeSrc;
+    }
+
+  </script>
 </body>
 
 </html>
