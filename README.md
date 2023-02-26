@@ -24,6 +24,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 - Semantic HTML5 markup
 - CSS
+- CSS grid (Need to practice more writing reusable layouts with grid and in general)
+- used HTML picture tag with source attributes.
 
 ## 👩‍💻 Author
 

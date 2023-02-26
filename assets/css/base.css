@@ -24,32 +24,28 @@
   --dark: #00001a;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: var(--dark-shade);
   color: #5d5f79;
   background-color: var(--light);
   background-color: #fffdfa;
   font-family: Inter, sans-serif;
-  position: relative;
 }
+
 .bg-inverted {
   background-color: var(--dark);
   background-color: #00001a;
 }
+
 .text-inverted {
   color: var(--light-shade);
   color: #c5c6ce;
-}
-.page-footer {
-  height: auto;
-  padding: 1rem;
-  margin: auto;
-  text-align: center;
-  font-size: 0.9em;
-}
-.page-footer a {
-  color: var(--dark);
-  color: #00001a;
 }
 
 p {
@@ -73,18 +69,18 @@ a:focus {
 .btn {
   border: none;
   text-transform: uppercase;
+  font-family: inherit;
+  font-size: 13.34px;
   font-weight: bold;
   letter-spacing: 0.33em;
-  font-size: 13.34px;
-  font-family: inherit;
-  transition: all 0.3s;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .btn-accent {
-  background-color: #f15e50;
-  color: #fffdfa;
   padding: 1.2em 2.5em;
+  color: #fffdfa;
+  background-color: #f15e50;
 }
 .btn-accent:hover,
 .btn-accent:focus {

@@ -1,0 +1,140 @@
+/* *********Trending section (hero like with large image)***************/
+.trending img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.trending .title-1 {
+  display: block;
+  font-size: 2.56rem;
+  line-height: 1;
+  color: var(--dark);
+  color: #00001a;
+  margin-bottom: 0.9rem;
+}
+.trending p {
+  margin-bottom: 1.7rem;
+}
+
+@media screen and (min-width: 786px) {
+}
+@media screen and (min-width: 1200px) {
+  .trending .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .trending .title-1 {
+    font-size: 57.5px;
+    line-height: 1;
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+  .trending p {
+    line-height: 1.5em;
+  }
+}
+
+/* *********Trending section (hero like with large image)***************/
+/* *********New news section (dark bg)**********************************/
+.new {
+  padding: 1.35rem;
+  padding-bottom: 0;
+}
+.new h2 {
+  height: auto;
+  color: #e9ab53;
+  color: var(--light-accent);
+  font-size: 2rem;
+}
+.new h3 {
+  margin-top: 1.98rem;
+  margin-bottom: 0.5rem;
+  color: #fffdfa;
+  color: var(--light);
+  font-size: 1.25rem;
+  letter-spacing: 0.01rem;
+}
+.new hr {
+  margin-bottom: 2rem;
+}
+.new p {
+  margin-bottom: 1rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid var(--dark-shade);
+  border-color: #5d5f79;
+}
+.new p:last-child {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0;
+  border: none;
+}
+.new a:hover,
+.new a:focus {
+  color: var(--light);
+  color: #e9ab53;
+}
+@media screen and (min-width: 786px) {
+  .new {
+    padding: 1.8rem 1.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .new h2 {
+    font-size: 2.5rem;
+  }
+  .new h3 {
+    margin-top: 1.7rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0;
+  }
+  .new p {
+    line-height: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 2.2rem;
+  }
+}
+/* *********New news section (dark bg)**********************************/
+/* *********Popular section (page bottom)**********************************/
+.popular {
+  margin-bottom: 80px;
+}
+.popular-list div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.popular li {
+  display: inline-flex;
+  align-items: space-between;
+}
+.popular img {
+  display: block;
+  width: 100px;
+  margin-right: 24px;
+}
+
+.popular .number {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.popular h2 {
+  margin-bottom: 0.3rem;
+  color: var(--dark);
+  color: #00001a;
+  font-size: 1.01rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+}
+.popular p {
+  line-height: 1.6rem;
+}
+@media screen and (min-width: 1200px) {
+  .popular {
+    margin-bottom: 130px;
+  }
+}
+/* *********Popular section (page bottom)**********************************/
