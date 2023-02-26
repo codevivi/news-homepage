@@ -8,7 +8,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 🌐 **Site published at**: [https://codevivi.github.io/news-homepage](https://codevivi.github.io/news-homepage)
 
-**Solution URL**: Not Yet
+**Solution URL**: [responsive-news-homepage-using-css-grid](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-css-grid-ktrHsWjIvs)
 
 🎯 **Goals:**
 
