@@ -1,6 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 5.5rem;
 }
@@ -26,6 +39,7 @@
   padding-top: 133px;
   background-color: var(--light);
   background-color: #fffdfa;
+  -o-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
   -webkit-transition: width 0.5s ease-out;
   -moz-transition: width 0.5s ease-out;
@@ -44,6 +58,8 @@
 }
 .mob-nav {
   width: 0;
+  -webkit-transition: width 0.5s ease-in;
+  -o-transition: width 0.5s ease-in;
   transition: width 0.5s ease-in;
   -webkit-transition: width 0.5s ease-out;
   -moz-transition: width 0.5s ease-out;
@@ -51,6 +67,8 @@
 @media screen and (min-width: 786px) {
   .mob-nav {
     width: 100%;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .nav-toggler {
@@ -62,20 +80,32 @@
     min-height: 100%;
     height: 100%;
     padding: 0;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .nav-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     width: 100%;
     height: 100%;
   }
   .nav-item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin-left: 1.2rem;
   }
   .nav-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 1rem;
     padding: 1rem 0.2rem 1rem 1rem;

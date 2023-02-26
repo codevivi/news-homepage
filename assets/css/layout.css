@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .container {
   width: 97%;
   height: 100%;
@@ -27,34 +34,42 @@
 }
 
 .grid {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: auto;
   grid-auto-flow: row;
 }
 
 /* COL spanning 4 possibilities item-fill, item-wide, item-half, item-narrow, append tab or desk for media queries*/
 .item-fill {
+  -ms-grid-column-span: 6;
   grid-column: span 6 / auto; /*all container width*/
 }
 
 .item-wide {
+  -ms-grid-column-span: 4;
   grid-column: span 4 / auto; /* 2/3 of container*/
 }
 
 .item-half {
+  -ms-grid-column-span: 3;
   grid-column: span 3 / auto; /* half container*/
 }
 .item-narrow {
+  -ms-grid-column-span: 2;
   grid-column: span 2 / auto; /*1/3 of container - main column size*/
 }
 
 /* ROW spanning 2 possibilities item-short, item-tall,  append tab or desk for media queries*/
 .item-short {
+  -ms-grid-row-span: 1;
   grid-row: span 1 / auto;
 }
 
 .item-tall {
+  -ms-grid-row-span: 2;
   grid-row: span 2 / auto;
 }
 
@@ -91,43 +106,55 @@
 
 @media screen and (min-width: 786px) {
   .item-fill-tab {
+    -ms-grid-column-span: 6;
     grid-column: span 6 / auto;
   }
   .item-wide-tab {
+    -ms-grid-column-span: 4;
     grid-column: span 4 / auto;
   }
 
   .item-half-tab {
+    -ms-grid-column-span: 3;
     grid-column: span 3 / auto;
   }
   .item-narrow-tab {
+    -ms-grid-column-span: 2;
     grid-column: span 2 / auto;
   }
   .item-tall-tab {
+    -ms-grid-row-span: 2;
     grid-row: span 2 / auto;
   }
   .item-short-tab {
+    -ms-grid-row-span: 1;
     grid-row: span 1 / auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .item-fill-desk {
+    -ms-grid-column-span: 6;
     grid-column: span 6 / auto;
   }
   .item-wide-desk {
+    -ms-grid-column-span: 4;
     grid-column: span 4 / auto;
   }
 
   .item-half-desk {
+    -ms-grid-column-span: 3;
     grid-column: span 3 / auto;
   }
   .item-narrow-desk {
+    -ms-grid-column-span: 2;
     grid-column: span 2 / auto;
   }
   .item-tall-desk {
+    -ms-grid-row-span: 2;
     grid-row: span 2 / auto;
   }
   .item-short-desk {
+    -ms-grid-row-span: 1;
     grid-row: span 1 / auto;
   }
 }
