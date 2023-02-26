@@ -34,3 +34,9 @@ Vilma Jovaišaitė
 - [Github](https://github.com/codevivi)
 
 - Frontend Mentor - [@codevivi](https://www.frontendmentor.io/profile/codevivi)
+
+## Acknowledgments
+
+Thank You for checking out my project and submitting issues, that helps me strive to become better:
+
+- [@belauzas](https://github.com/belauzas)
