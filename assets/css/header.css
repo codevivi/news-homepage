@@ -39,10 +39,6 @@
   padding-top: 133px;
   background-color: var(--light);
   background-color: #fffdfa;
-  -o-transition: width 0.5s ease-out;
-  transition: width 0.5s ease-out;
-  -webkit-transition: width 0.5s ease-out;
-  -moz-transition: width 0.5s ease-out;
 }
 .nav-list {
   list-style: none;
@@ -58,19 +54,8 @@
 }
 .mob-nav {
   width: 0;
-  -webkit-transition: width 0.5s ease-in;
-  -o-transition: width 0.5s ease-in;
-  transition: width 0.5s ease-in;
-  -webkit-transition: width 0.5s ease-out;
-  -moz-transition: width 0.5s ease-out;
 }
 @media screen and (min-width: 786px) {
-  .mob-nav {
-    width: 100%;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
   .nav-toggler {
     display: none;
   }

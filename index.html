@@ -167,13 +167,23 @@
     const menuSrc = "./assets/images/icon-menu.svg";
     const closeSrc = "./assets/images/icon-menu-close.svg";
 
-    console.log('bla');
     navToggler.addEventListener('click', toggleNav);
     function toggleNav() {
       console.log(navToggler, mainNav);
-      mainNav.classList.toggle('mob-nav');
-      togglerIcon.src = mainNav.classList.contains('mob-nav') ? menuSrc : closeSrc;
+      let isOpen = !(mainNav.classList.contains('mob-nav'));
+      mainNav.style.transition = "width 0.5s ease-in";
+      if (isOpen) {
+        togglerIcon.src = isOpen ? menuSrc : closeSrc;
+        mainNav.classList.toggle('mob-nav');
+        setTimeout(() => {
+          mainNav.style.transition = "none";
+        }, 501)
+      } else {
+        mainNav.classList.toggle('mob-nav');
+        togglerIcon.src = isOpen ? menuSrc : closeSrc;
+      }
     }
+
 
   </script>
 </body>
