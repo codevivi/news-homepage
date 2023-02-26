@@ -154,16 +154,25 @@
   margin-bottom: 0.3rem;
   color: var(--dark);
   color: #00001a;
-  font-size: 1.01rem;
+  font-size: 1.15rem;
   font-weight: bold;
-  letter-spacing: 0.08rem;
 }
 .popular p {
-  line-height: 1.6rem;
+  line-height: 1.66rem;
 }
 @media screen and (min-width: 1200px) {
   .popular {
     margin-bottom: 130px;
+  }
+  .popular .number {
+    margin-bottom: 0;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .popular h2 {
+    font-size: 1.15rem;
+    letter-spacing: 0;
+    font-weight: 800;
   }
 }
 /* *********Popular section (page bottom)**********************************/
